@@ -1,0 +1,176 @@
+
+/* body */
+
+body {
+    font-size: 16px;
+    font-family: "Roboto", Helvetica, san-serif;
+    background-color: white;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul li {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+/* header & nav */
+
+header{
+    background-color: gainsboro;
+}
+
+nav {
+    height: 70px;
+}
+
+.nav-left {
+    float: left;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.nav-right {
+    float: right;
+    text-align: right;
+    margin-right: 10px;
+    margin-left: 0px;
+}
+
+.nav-right ul li {
+    float: right;
+    margin-top: 10px;
+    margin-right: 25px;
+}
+
+.desktop-menu {
+    display: none;
+    color: darkcyan;
+    width: 100%;
+}
+
+.mobile-menu {
+    color: darkgrey;
+    width: 100%;
+}
+
+/* section */
+
+section {
+
+}
+
+.hero {
+    height: 480px;
+    background: url('http://placehold.it/960x480') no-repeat center center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+.ghost-btn {
+    position: relative;
+    top: 75%;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    width: 200px;
+    padding: 8px;
+    border: 3px solid #000;
+    border-radius: 5px;
+    text-align: center;
+    outline: none;
+    transition: background-color 0.2s ease-out,
+                color 0.2s ease-out;
+
+}
+
+.ghost-btn:hover,
+.ghost-btn:active {
+    background-color: #fff;
+    color: #000;
+    transition: background-color 0.3s ease-in,
+                color 0.3s ease-in;
+}
+
+/*article*/
+
+article {
+    display: inline-block;
+}
+
+.col {
+    display: block;
+    float: left;
+}
+
+article .col_1_of_3 {
+    width: 100%;
+    height: 300px;
+}
+
+/*footer*/
+
+footer {
+    background-color: darkgray;
+    text-align: center;
+}
+
+footer .bot-nav {
+    display:inline-block;
+    height: 30px;
+    width: 300px;
+}
+
+.bot-nav ul li {
+    font-size: .75rem;
+    text-align: center;
+    display: inline-block;
+    padding-right: 5px;
+    padding-left: 5px;
+
+}
+
+/** tablet **/
+@media only screen and (min-width: 768px) {
+    body {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .desktop-menu {
+        display: inline;
+        float: right;
+    }
+    .mobile-menu {
+        display: none;
+    }
+    article {
+        width: 100%;
+        text-align: center;
+    }
+    article .col_1_of_3 {
+        width: 33.3%;
+
+    }
+}
+
+/** desktop **/
+@media only screen and (min-width: 1200px) {
+    body {
+        width: 960px;
+    }
+    .desktop-menu {
+        display: inline;
+        float: right;
+    }
+}
+
+
+
+
+
